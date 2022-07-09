@@ -1,0 +1,145 @@
+html{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: lightgrey;
+
+}
+#center-point
+{
+    height: 150px;
+    width: 150px;
+    color: black;
+    display: inline-block;
+    position:absolute;
+}
+.darkmode
+{
+    background-color: black;
+}
+#call{
+    background-color:white;
+    height:82%;
+    width:80%;
+    position:absolute;
+    margin-top:2cm;
+    border-radius: 20px;
+    margin-left: 2cm;
+    display:block;
+}
+#dick{
+    
+    background-color:black;
+    height:82%;
+    width:80%;
+    position:absolute;
+    margin-top:2cm;
+    border-radius: 20px;
+    margin-left: 2cm;
+    display:none;
+
+}
+#toggleButton{
+    background-color: black;
+    color:blanchedalmond;
+    border-radius: 20px;
+    position:absolute;
+    transform:translate(600px,100px);
+    display:block;
+}
+#toggleButton1{
+    background-color:whitesmoke;
+    color:black;
+    border-radius: 20px;
+    position:absolute;
+    transform:translate(600px,100px);
+    display:none;
+}
+#clock{
+    width:300px;
+    height:300px;
+    background-color: grey;
+    position:relative;
+    margin-top:40px;
+    border-radius: 50%;
+    transform:translate(500px,200px);
+    border: 2px solid rgb(119, 12, 105);
+    box-shadow:inset 0 0 2px 2px lightgreen,0px 0px 5px 2px violet;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXK6nLT4gNZ0LhZGY7g_ubsRBi6FgPUK-_OW8FVCRg2O2zc788ZVP4bCKZTybu_IbttBQ&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: contain;
+ 
+}
+.clock::after{
+    content:"";
+    display:block;
+    width:500px;
+    height:500px;
+    background-color: black;
+    border-radius: 50%;
+    left:50%;
+    top:50%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+    border:2px solid rgb(119, 12, 105);
+    z-index:4;
+}
+#minute,#hour,#second{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+#second{
+    z-index:3;
+}
+#minute{
+    z-index: 2;
+}
+#hour{
+    z-index:1;
+}
+#second::before,#minute::before,#hour::before{
+    content:"";
+    display:block;
+    left:50%;
+    top:50%;
+    position:absolute;
+   ;
+    transform:translate(-50%,-100%)
+}
+#second::before{
+     width: 1px;
+    height:120px;
+    background-color: rgb(54, 5, 52) 
+}
+#minute::before{
+    width: 4px;
+   height:100px;
+   background-color: black;
+}
+#hour::before{
+    width: 4px;
+   height:70px;
+   background-color:black; 
+}
+#time{
+    position:absolute;
+    z-index:11;
+    background:rgb(134, 31, 129);
+    font-size: 50px;
+    transform:translate(45px,340px);
+    box-shadow: 2px 4px greenyellow;
+    border-radius: 8px ;
+}
+
+#date{
+    position:absolute;
+    z-index:11;
+    background:rgb(110, 21, 91);
+    font-size: 50px;
+    transform:translate(400px,340px);
+    box-shadow: 2px 4px greenyellow;
+    border-radius: 8px ;
+
+}
